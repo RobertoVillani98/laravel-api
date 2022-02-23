@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 //Area Pubblica - Frontoffice
 Route::get('/', function () {
-    return view('welcome');
+    return view('front');
 });
 Auth::routes();
 
