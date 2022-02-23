@@ -10,6 +10,11 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+//compilazione per backoffice
+mix.js('resources/js/admin.js', 'public/js')
+    .sass('resources/sass/admin.scss', 'public/css');
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    //compilazione per frontoffice
+mix.js('resources/js/front.js', 'public/js')
+    .sass('resources/sass/front.scss', 'public/css');
+
